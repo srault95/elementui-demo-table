@@ -10,14 +10,17 @@ poi build example/index.js --templateCompiler --format umd --no-sourceMap --file
 > créé un dist/client.js ???
 */
 module.exports = {
+  // entry: glob('./src/**/*.vue'),
   entry: {
-    'elementui-demo-table': './src/elementui-demo-table/elementui-demo-table.vue', // glob('./src/**/*.vue')
+    'elementui-demo-table': './src/elementui-demo-table/elementui-demo-table.vue',
     'example': 'example/index.js'
   },
+  /*
   filename: {
     js: name + '.min.js',
     css: name + '.min.css'
   },
+  */
   sourceMap: true,
   // html: false,
   html: {

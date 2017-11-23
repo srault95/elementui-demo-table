@@ -1,64 +1,56 @@
-# elementui-demo-table
+# Démonstration Vue.js et Element avec CRUD et internationalisation
 
-> A Vue.js component module
+* [Démo](http://elementui-demo-table.surge.sh/)
 
-# Usage
+> Le composant est dans src/ et l'appel du composant se trouve dans example/
 
-## ES6 Modules / CommonJS
+<p align="center">
+  <h3>Table d'utilisateurs fictifs</h3>
+  <img src="screenshot/main.png" width="350" />
 
-```bash
-$ npm run build
-```
+  <h3>Edition d'un utilisateur</h3>
+  <img src="screenshot/edit-box.png" width="350" />
+</p>
 
-```js
-import ElementuiDemoTable from 'dist/elementui-demo-table';
+## Produits utilisés
 
-Vue.component('elementui-demo-table', ElementuiDemoTable);
-```
+* [vue.js 2](http://vuejs.org)
+* [element](http://element-cn.eleme.io/#/en-US/component/installation)
+* [vue-i18n](https://github.com/kazupon/vue-i18n)
+* [faker.js](https://github.com/marak/Faker.js/)
+* [poi.js](http://poi.js.org)
+* [vue-standalone-component](https://github.com/InCuca/vue-standalone-component)
+* [surge.sh](http://surge.sh)
 
-```html
-<elementui-demo-table text="Hello World!"></elementui-demo-table>
-```
+## Quelques informations sur cette démonstration
 
-## UMD
+* Les données sont générés par Faker.js et ne sont reliés à aucun backend. Vous
+  pouvez donc, éditer, supprimer ou créer autant que vous le souhaitez. Utilisez
+  le bouton _Actions -> Recharger les données_ pour réinitialiser.
 
-```bash
-$ npm run build:umd
-```
+* Le login Github n'est relié à aucune action.
 
-```html
-<elementui-demo-table text="Hello World!"></elementui-demo-table>
+* Le projet est généré avec vue-cli et
+  [vue-standalone-component](https://github.com/InCuca/vue-standalone-component)
 
-<script src="https://unpkg.com/vue" charset="utf-8"></script>
-<script src="./dist/elementui-demo-table.min.js" charset="utf-8"></script>
+* L'utilisation de [poi.js](http://poi.js.org) facilite grandement la gestion
+  des projets nécessitant Webpack.
 
-<script type="text/javascript">
-  Vue.component('elementui-demo-table', window.ElementuiDemoTable);
-</script>
-```
+* Les traductions sont sommaires et incomplètes.
 
-## Installation
+## TODO
 
-### Using yarn
-
-`yarn add elementui-demo-table`
-
-### Using npm
-
-`npm i --save elementui-demo-table`
-
-## Demo and Docs
-
-`npm run serve`
-
-## Tests
-
-This template uses karma with chai by default, you can change test settings in poi.config.js
-
-`npm run test`
-`npm run test:watch`
-`npm run test:cov`
+* Régler le problème du changement de langue pour Element
+* Tests
+* Intégration de Firebase en version simplifié
+* Faire une version responsive en PWA
+* Chargement à la demande pour les composants element-ui
+* Voir pourquoi norton déclenche une alerte sur chrome pour surge.sh et pas sur
+  firefox
+* Exploiter [styleguide](https://github.com/vue-styleguidist/vue-styleguidist)
+  qui est pré-configuré ou voir [vue-play](https://github.com/vue-play/vue-play)
 
 ## License
 
-This project is licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License)
+This project is licensed under
+[MIT License](http://en.wikipedia.org/wiki/MIT_License)
