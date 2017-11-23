@@ -1,16 +1,16 @@
-# Démonstration Vue.js et Element avec CRUD et internationalisation
+# Démonstration Vue.js / Element-ui
+
+**Cette démonstration permet de gérer une table/collection avec les CRUD
+(Create/Retrieve/Update/Delete) indispensables**
+
+Une internationalisation Français/Anglais est également implémenté avec
+[vue-i18n](https://github.com/kazupon/vue-i18n).
 
 * [Démo](http://elementui-demo-table.surge.sh/)
 
-> Le composant est dans src/ et l'appel du composant se trouve dans example/
+![Screenshot](screenshot/main.png "Table d'utilisateurs fictifs")
 
-<p align="center">
-  <h3>Table d'utilisateurs fictifs</h3>
-  <img src="screenshot/main.png" width="350" />
-
-  <h3>Edition d'un utilisateur</h3>
-  <img src="screenshot/edit-box.png" width="350" />
-</p>
+![Screenshot](screenshot/edit-box.png "Edition d'un utilisateur")
 
 ## Produits utilisés
 
