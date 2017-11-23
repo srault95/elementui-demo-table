@@ -1,0 +1,59 @@
+{
+  "name": "elementui-demo-table",
+  "version": "0.1.0",
+  "description": "Démonstration d'un Composant Vue basé sur Element-ui",
+  "author": "Stéphane RAULT <stephane.rault@s2ltic.fr>",
+  "main": "dist/elementui-demo-table.min.js",
+  "license": "MIT",
+  "homepage": "https://github.com/srault95/elementui-demo-table",
+  "bugs": {
+    "url": "https://github.com/srault95/elementui-demo-table/issues"
+  },
+  "scripts": {
+    "build": "poi build --format cjs",
+    "build:umd": "poi build --format umd",
+    "build:doc": "vue-styleguidist build",
+    "dev:example": "poi example/index.js --templateCompiler --no-clear --filename example",
+    "build:example": "poi build example/index.js --templateCompiler --format umd --no-sourceMap --filename example",
+    "serve:example": "serve dist --single",
+    "serve": "vue-styleguidist server",
+    "lint": "eslint src/**/*.vue",
+    "test": "poi test",
+    "test:watch": "poi test --watch",
+    "test:cov": "poi test --coverage"
+  },
+  "keywords": [
+    "vue",
+    "component",
+    "element-ui",
+    "eleme"
+  ],
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "element-ui": "^2.0.5",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.2",
+    "vue": "^2.5.3"
+  },
+  "devDependencies": {
+    "babel-plugin-component": "^0.10.1",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.11.0",
+    "eslint-plugin-vue": "beta",
+    "karma-chai": "^0.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-phantomjs-shim": "^1.5.0",
+    "node-glob": "^1.2.0",
+    "poi": "^9.5.2",
+    "poi-preset-karma": "^9.2.1",
+    "serve": "^6.4.1",
+    "typescript": "^2.6.1",
+    "vue-i18n": "^7.3.2",
+    "vue-styleguidist": "^1.3.3",
+    "vue-webpack-loaders": "^1.0.6",
+    "webpack": "^3.1.0"
+  }
+}
